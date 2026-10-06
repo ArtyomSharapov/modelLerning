@@ -1,8 +1,8 @@
 datasets/
 runs/
 weights/
+other/
 *.pt
 *.pth
 image_C_936.jpg
 Thumbs.db
-other/
