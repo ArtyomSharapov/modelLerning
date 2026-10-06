@@ -1,0 +1,8 @@
+datasets/
+runs/
+weights/
+*.pt
+*.pth
+image_C_936.jpg
+Thumbs.db
+other/
