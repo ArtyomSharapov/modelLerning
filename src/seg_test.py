@@ -5,9 +5,9 @@ model = YOLO(
 )
 
 model.predict(
-    source=r"D:\projects\python\modelLerning\datasets\dataset_segmentation_yolo\images\val\image_271.jpg",
+    source=r"D:\projects\python\modelLerning\datasets\dataset_segmentation_yolo\images\val\image_783.jpg",
     imgsz=320,
     save=True,
-    project=r"D:\projects\python\modelLerning\other",
+    project=r"D:\projects\python\modelLerning\other/",
     name = "sss",
     workers=0)
