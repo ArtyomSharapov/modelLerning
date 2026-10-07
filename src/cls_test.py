@@ -1,9 +1,10 @@
 from ultralytics import YOLO
 
-best_model = YOLO("runs/classify/crack_or_notCrack_GPU/weights/best.pt")
+#класс для проверки классификации
+best_model = YOLO("models/classificationModel.pt")
 
 #создаем переменную для одного фото и передаем в result
-results = best_model("image_C_936.jpg")
+results = best_model("imagesForTest/images/name.jpg")
 result = results[0]
 
 # тут получаем самый вероятный класс. 0/1

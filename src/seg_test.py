@@ -1,13 +1,19 @@
 from ultralytics import YOLO
-
+import cv2
 model = YOLO(
-    r"D:\projects\python\modelLerning\runs\semantic\crack_seg_GPU-5\weights\best.pt"
+    "models/segmentationModel.pt"
 )
 
-model.predict(
-    source=r"D:\projects\python\modelLerning\datasets\dataset_segmentation_yolo\images\val\image_783.jpg",
+#проверка работоспособности сегментации
+results = model.predict(
+    source="imagesForTest/images/image_1123.jpg",
     imgsz=320,
-    save=True,
-    project=r"D:\projects\python\modelLerning\other/",
-    name = "sss",
+    save=False,
+    exist_ok=True,
     workers=0)
+
+result = results[0]
+image = result.plot()
+image_save = "imagesForTest/resultImages/name.jpg"
+cv2.imwrite(image_save,image)
+print("Маска сохранена в:", image_save)

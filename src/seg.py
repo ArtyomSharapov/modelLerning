@@ -1,6 +1,6 @@
 from ultralytics import YOLO
 
-
+#обучение для сегментации
 seg_model = YOLO("yolo26n-sem.pt")
 seg_model.train(
     data="datasets/dataset_segmentation_yolo/data.yaml",
