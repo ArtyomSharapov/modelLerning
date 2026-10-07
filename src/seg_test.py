@@ -6,7 +6,7 @@ model = YOLO(
 
 #проверка работоспособности сегментации
 results = model.predict(
-    source="imagesForTest/images/image_1123.jpg",
+    source="imagesForTest/images/name.jpg",
     imgsz=320,
     save=False,
     exist_ok=True,
