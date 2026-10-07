@@ -2,7 +2,6 @@ datasets/
 runs/
 weights/
 other/
-*.pt
 *.pth
 image_C_936.jpg
 Thumbs.db
@@ -22,3 +21,7 @@ env/
 wandb/
 mlruns/
 .vscode/
+
+yolo26n-sem.pt
+yolov8n-cls.pt
+yolov8n-seg.pt
